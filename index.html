@@ -2,14 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fruit Search</title>
-    <link rel="stylesheet" href="fruit.css" />
+    <title>Fruit Autocomplete</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <form>
-      <input type="search" placeholder="Fruit Search" />
-    </form>
-    <script src="fruit.js"></script>
+    <!-- partial:index.partial.html -->
+    <div class="search-container">
+      <input
+        type="text"
+        name="fruit"
+        id="fruit"
+        placeholder="Search fruit 🍎"
+      />
+      <div class="suggestions">
+        <ul></ul>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="./fruit.js"></script>
   </body>
 </html>
